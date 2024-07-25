@@ -1,0 +1,1009 @@
+/********** Variables CSS  **************/
+:root {
+    --logo-blue-color: #219ADA;
+    --dark-blue-color: #042a3a;
+    --Heading-color: #009CDE;
+    --Sub-heading-color: #004D71;
+    --dark-heading-color: #002A3A;
+    --Text-color: #666666;
+    --Card-background-color: #EEEEEE;
+    --calibri: calibri;
+    --calibri-bold: calibrib;
+    --Brandon: Brandon;
+    --BrandonGrotesque: BrandonGrotesque;
+    --MyriadPro-Regular: MyriadPro-Regular;
+
+}
+
+@font-face {
+    font-family: calibri;
+    src: url(../fonts/calibri.woff);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: calibrib;
+    src: url(../fonts/calibrib.woff);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Brandon;
+    src: url(../fonts/Brandon_bld.woff);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: BrandonGrotesque;
+    src: url(../fonts/BrandonGrotesque-Regular.woff);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: MyriadPro-Regular;
+    src: url(../fonts/MyriadPro-Regular.woff);
+    font-weight: normal;
+}
+
+/************ Reset CSS  *****************/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    font-family: calibri;
+    line-height: 1;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Brandon;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-family: var(--calibri);
+    line-height: 1.5;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+/************* Global Classes CSS  ***************/
+
+.mry-4 {
+    margin: 3rem 0;
+}
+
+.pry-4 {
+    padding: 3rem 0;
+}
+
+.main-heading,
+.black-heading,
+.white-heading {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: var(--logo-blue-color);
+    margin-bottom: 1rem;
+}
+
+.main-heading {
+    color: var(--Heading-color);
+}
+
+.black-heading {
+    color: #000000;
+}
+
+.white-heading {
+    color: #fff;
+}
+
+.know-more a {
+    color: var(--Heading-color);
+    text-decoration: underline;
+    font-family: var(--calibri);
+    font-size: 2rem;
+}
+
+.breadcrumb a {
+    font-size: 1.3rem;
+    color: #009CDE !important;
+}
+
+
+/********* Top Header Section CSS  **************/
+.header-outer {
+    height: 118px;
+    padding: .5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.header-outer .top_head {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.ace_logo_outer img,
+.abbot_logo_outer img {
+    display: block;
+    width: 100%;
+}
+
+.ace_logo_outer img {
+    max-width: 160px;
+}
+
+.abbot_logo_outer img {
+    max-width: 200px;
+}
+
+/********* Navigation Bar CSS  ***************/
+.top-nav {
+    background: rgb(100, 204, 201);
+    background: -webkit-gradient(linear, left top, right top, from(rgba(100, 204, 201, 1)), color-stop(50%, rgba(0, 136, 194, 1)));
+    background: -o-linear-gradient(left, rgba(100, 204, 201, 1) 0%, rgba(0, 136, 194, 1) 50%);
+    background: linear-gradient(90deg, rgba(100, 204, 201, 1) 0%, rgba(0, 136, 194, 1) 50%);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.offcanvas-body {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.top-nav .nav-link {
+    color: #fff;
+    margin: 0 .2rem;
+    font-size: 1.320rem;
+}
+
+.btn-outline-light:hover {
+    color: #009cde !important;
+}
+
+.dropdown-menu li {
+    padding: 6px 0px;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+    color: rgb(255 255 255);
+}
+
+.footer-nav {
+    display: none;
+}
+
+/*********** Hero Slider Section CSS  ***********/
+.slider-text {
+    max-width: 48vw;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    -webkit-transform: translate(-28%, -50%);
+    -ms-transform: translate(-28%, -50%);
+    transform: translate(-28%, -50%);
+}
+
+.slider-text h1 {
+    font-size: 2.6vw;
+    font-family: var(--Brandon);
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.5;
+}
+
+.owl-carousel .owl-nav button.owl-prev {
+    position: absolute;
+    left: 2%;
+    top: 40%;
+    -webkit-transform: translate(-50%, -60%);
+    -ms-transform: translate(-50%, -60%);
+    transform: translate(-50%, -60%);
+}
+
+.owl-carousel .owl-nav button.owl-next {
+    position: absolute;
+    right: 2%;
+    top: 40%;
+    -webkit-transform: translate(50%, -60%);
+    -ms-transform: translate(50%, -60%);
+    transform: translate(50%, -60%);
+}
+
+.owl-carousel .owl-nav button.owl-prev span,
+.owl-carousel .owl-nav button.owl-next span {
+    color: #666666;
+    font-size: 6rem;
+}
+
+.owl-theme .owl-nav [class*=owl-]:hover {
+    background: inherit;
+    color: inherit;
+}
+
+.owl-theme .owl-dots .owl-dot.active span {
+    background: var(--Heading-color);
+    border-color: var(--Heading-color);
+}
+
+.owl-theme .owl-dots .owl-dot span {
+    width: 20px;
+    height: 20px;
+}
+
+/********** About Section CSS  *************/
+.counter-number {
+    font-size: 3.150rem;
+    color: var(--Heading-color);
+    font-weight: 600;
+    font-family: Brandon;
+}
+
+.counter-text {
+    font-family: BrandonGrotesque;
+    max-width: 180px;
+    margin: auto;
+    text-transform: uppercase;
+    color: var(--dark-blue-color);
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+.counter-outer {
+    border-right: 3px dashed var(--Heading-color);
+}
+
+.counter-outer:last-child {
+    border: none;
+}
+
+/********** Offering Section  **************/
+
+.offerings-section {
+    background: url("../img/Offerings-bg.webp") no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.icon-outer {
+    max-width: 130px;
+}
+
+.icon-outer.adjust-icon{
+    max-width: 115px;
+    padding-bottom: 1rem;
+}
+
+.blue-bg {
+    background: var(--Heading-color);
+}
+
+.usp-outer h3 {
+    color: #fff;
+    text-transform: uppercase;
+    padding: 1rem 0;
+    font-family: var(--Brandon);
+}
+
+/*********** Medical Colleges Section CSS  ***********/
+.img-wrap {
+    max-width: 120px;
+    margin: 1rem auto;
+}
+
+.medical-college .card {
+    background: #AAE8F9;
+    min-height: 375px;
+    border: none;
+}
+
+.feature-medical .card-body .card-title {
+    font-size: 1.3rem;
+    font-family: var(--Brandon);
+    text-transform: uppercase;
+}
+
+.feature-medical .card-body .card-text {
+    font-family: var(--calibri);
+    font-size: 1rem;
+}
+
+.multiple-item-slider .owl-nav button.owl-next {
+    right: -40px;
+}
+
+.multiple-item-slider .owl-nav button.owl-prev {
+    left: -40px;
+}
+
+/********* Featured Faculties Section CSS  ***********/
+.testimonial-slider {
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #fff), color-stop(50%, #219ADA));
+    background: -o-linear-gradient(bottom, #fff 50%, #219ADA 50%);
+    background: linear-gradient(to top, #fff 50%, #219ADA 50%);
+}
+
+.img-outer {
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    /* border: 2px solid lightgray; */
+    position: relative;
+    overflow: hidden;
+    margin: 1rem auto;
+}
+
+.img-outer img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.testimonial-slider .card {
+    background: #EEEEEE;
+    min-height: 450px;
+    border: none;
+}
+
+/************ Upcomming Section CSS  **************/
+.upcomming-session .card {
+    border: none;
+    background-color: transparent !important;
+    margin: 0px !important;
+    padding: 0px !important;
+}
+
+.upcomming-session .card .card-body {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.upcomming-session .card .card-body .card-date,
+.upcomming-session .card .card-body .name-author,
+.upcomming-session .card .card-body .location {
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.upcomming-session .card .card-body .topic-name {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: var(--Heading-color);
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.upcomming-session .card .card-body .name-author {
+    text-transform: capitalize;
+}
+
+/********* Video Section CSS  ***********/
+.video-section {
+    background-color: var(--Heading-color);
+}
+
+.video-div video {
+    width: 100%;
+}
+
+/********* Footer Section CSS  **********/
+footer {
+    background: #000000;
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+}
+
+.footer-logo {
+    max-width: 200px;
+}
+
+footer p a,
+footer p {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-align {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center !important;
+    -ms-flex-align: center !important;
+    align-items: center !important;
+}
+
+.quick_links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+}
+
+.social-icons li {
+    background: #fff;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.social-icons li a {
+    color: #000;
+    font-size: 1.2rem;
+}
+
+.copyright-text {
+    padding: 1.5rem 0;
+    margin: 0px;
+}
+
+/********** Media Query Section CSS  **************/
+@media only screen and (max-width: 1400px) {
+    .top-nav .nav-link {
+        font-size: 1rem;
+    }
+
+}
+
+@media only screen and (max-width: 1024px) {
+    .top-nav .nav-link {
+        font-size: .9rem;
+    }
+
+    .medical-college .card {
+        min-height: 400px;
+    }
+
+    .multiple-item-slider .owl-nav button.owl-next {
+        right: -25px;
+    }
+
+    .multiple-item-slider .owl-nav button.owl-prev {
+        left: -25px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    html {
+        font-size: 16px;
+    }
+
+    .header-outer {
+        height: 70px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    .footer-nav {
+        display: block;
+    }
+
+    .ace_logo_outer img {
+        max-width: 80px;
+    }
+
+    .abbot_logo_outer img {
+        max-width: 130px;
+    }
+
+    .abbot_logo_outer {
+        margin-right: 35px;
+    }
+
+    .top-nav {
+        padding: inherit;
+    }
+
+    .navbar-toggler {
+        position: absolute;
+        top: -35px;
+        right: 3px;
+        outline: none;
+        border: none;
+        -webkit-transform: translate(-10%, -50%);
+        -ms-transform: translate(-10%, -50%);
+        transform: translate(-10%, -50%);
+    }
+
+    .navbar-toggler:focus {
+        outline: none;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+
+    .top-nav .offcanvas {
+        background-color: #000000;
+    }
+
+    .offcanvas .btn-close {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3e%3c/svg%3e");
+        opacity: 1;
+    }
+    .user-name svg{
+        padding-right: 5px;
+    }
+    .logout-btn svg{
+        padding-left: 5px;
+    }
+
+    .top-nav .offcanvas-body,
+    .top-nav .offcanvas-body .right-nav {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse;
+        -webkit-box-flex: initial;
+        -ms-flex-positive: initial;
+        flex-grow: initial;
+    }
+
+    .top-nav .offcanvas-body .navbar-nav {
+        width: 100%;
+    }
+
+    .top-nav .offcanvas-body .nav-item {
+        padding: .2rem;
+        border-bottom: 1px solid rgba(255, 255, 255, .3);
+    }
+
+    .offcanvas-title img {
+        max-width: 120px;
+    }
+
+    .top-nav .offcanvas-body,
+    .top-nav .offcanvas-body .right-nav .btn-outline-light {
+        text-align: left;
+        border: none;
+        background: none;
+        line-height: 1.5;
+    }
+
+    .login {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    .login .logout-btn {
+        text-decoration: none;
+        color: #c7c7c7;
+    }
+
+    .user-name {
+        font-weight: 600;
+    }
+
+    .dropdown-item {
+        color: #fff;
+        font-size: .8rem;
+    }
+
+    .navbar-nav .dropdown-menu {
+        position: static;
+        background: transparent;
+        color: #fff;
+        border: transparent;
+        padding: 0;
+    }
+
+    .counter-outer:nth-child(2) {
+        border: none;
+    }
+
+    .counter-outer {
+        margin-bottom: 2rem;
+    }
+
+    .mobile-footer.container {
+        max-width: 100%;
+    }
+
+    .footer-logo {
+        margin-bottom: 2rem;
+    }
+
+    .quick_links {
+        display: block;
+    }
+
+    .copyright-text {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .mobile-center {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        gap: 2px;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    .icon-outer {
+        max-width: 8vw !important;
+        padding-bottom: 0 !important;
+    }
+
+    .usp-outer {
+        padding: 1rem 0 !important;
+    }
+
+    .usp-outer h3 {
+        font-size: calc(.5rem + .6vw);
+        padding: .2rem 0;
+        margin-bottom: 0;
+    }
+
+    .medical-college .container,
+    .testimonial-slider .container {
+        padding-right: 2rem;
+        padding-left: 2rem;
+    }
+
+    .quick_links {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .mry-4 {
+        margin: 2rem 0;
+    }
+    
+    .pry-4 {
+        padding: 2rem 0;
+    }
+    .main-heading,
+    .black-heading,
+    .white-heading {
+        font-size: 2rem;
+    }
+
+    .card .img-wrap {
+        max-width: 100px;
+    }
+
+    .offerings-section {
+        background-attachment: initial;
+        padding-bottom: 5rem;
+        position: relative;
+    }
+
+    .offerings-section .container {
+        position: absolute;
+        max-width: 100%;
+        top: 100px;
+    }
+
+    .medical-college {
+        margin-top: 6rem;
+    }
+
+    .logout_popup {
+        font-size: 1rem !important;
+        color: #009CDE;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    html {
+        font-size: 16px;
+    }
+
+    .owl-carousel .owl-nav button.owl-prev span,
+    .owl-carousel .owl-nav button.owl-next span {
+        font-size: 3.5rem;
+        font-weight: 400;
+    }
+
+    .owl-theme .owl-dots .owl-dot span {
+        width: 10px;
+        height: 10px;
+    }
+
+    .main-heading,
+    .black-heading,
+    .white-heading,
+    .counter-number {
+        font-size: 1.4rem;
+    }
+    .inner-counter{
+        font-size: 2.4rem;
+    }
+    .counter-text {
+        font-size: 1.2rem;
+    }
+
+    .about-seciton p {
+        text-align: justify;
+    }
+
+    .icon-outer {
+        max-width: 12vw !important;
+    }
+
+    .usp-outer {
+        padding: 1rem 0 !important;
+    }
+
+    .usp-outer h3 {
+        font-size: calc(.7rem + .6vw);
+        padding: .2rem 0;
+        margin-top: 5px;
+    }
+
+    .usp-outer {
+        padding: 1rem 0 !important;
+    }
+
+    .multiple-item-slider .owl-nav button.owl-prev {
+        left: -20px;
+    }
+
+    .multiple-item-slider .owl-nav button.owl-next {
+        right: -20px;
+    }
+
+    .medical-college .card {
+        min-height: initial;
+    }
+
+    .testimonial-slider .card {
+        min-height: initial;
+    }
+
+    .social-icons li {
+        background: #fff;
+        width: 22px;
+        height: 22px;
+        border-radius: 50%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    .social-icons li a {
+        color: #000;
+        font-size: 1rem;
+    }
+
+    .medical-college {
+        margin-top: 6rem;
+    }
+
+    .offerings-section {
+        background-attachment: initial;
+        padding-bottom: 4rem;
+        position: relative;
+    }
+
+    .offerings-section .container {
+        position: initial;
+        max-width: 100%;
+        top: initial;
+    }
+    .offerings-section .container .col-4{
+        width: 100%;
+        max-width: 300px;
+        margin: 10px auto;
+    }
+
+
+    h5 {
+        font-family: Brandon;
+        text-transform: uppercase;
+        font-size: 0.850rem;
+    }
+}
+
+/******** Simulated Video **********/
+.inside-video-banner-sec {
+    position: static;
+}
+
+.inside-video-banner-heading {
+    position: absolute;
+    left: 7%;
+    top: 50%;
+    -webkit-transform: translate(-4%, -50%);
+    -ms-transform: translate(-4%, -50%);
+    transform: translate(-4%, -50%);
+}
+
+.inside-video-banner-heading h1 {
+    font-family: Brandon;
+    font-weight: bold;
+    font-size: 2.5vw;
+}
+
+.video-heading {
+    text-transform: uppercase;
+    font-family: Brandon;
+    font-weight: bold;
+    color: #009BDD;
+    font-size: 30px;
+    margin-bottom: 2rem;
+}
+
+.video-banner-img {
+    background: url(../../assets/img/Slide1.webp) no-repeat 0 0 / 100%;
+    padding: 0 0 31.2%;
+    position: relative;
+}
+
+.video-sec .cards {
+    border: 0px;
+    margin-bottom: 2rem;
+    display: inline-block;
+}
+
+.video-sec .cards-body {
+    padding: .5rem 0rem;
+}
+
+.video-sec .tab {
+    padding-left: 0rem;
+    padding-bottom: 1.3rem;
+}
+
+.video-sec .cards-title {
+    font-family: calibrib;
+    font-weight: bold;
+    font-size: 1.25rem;
+    line-height: 1.2;
+    color: #009CDE;
+}
+
+.video-sec .vcard-img-top {
+    width: 100%;
+}
+
+.video-sec .cards-text {
+    font-family: BrandonGrotesque;
+    font-size: .8rem;
+    color: #000000;
+    margin-top: .2rem;
+}
+.card-img, .card-img-top{
+    border-radius: 0 !important;
+}
+
+/********  popup *********/
+
+
+.btn_cookies {
+    background-color: #009CDE;
+    padding: 10px 30px;
+    border: none;
+    color: #fff;
+}
+
+.btn_logout_Back {
+
+    background-color: #009CDE;
+    padding: 10px;
+    border: none;
+    width: 100%;
+    color: #fff;
+}
+
+.btn_logout_Yes {
+    background-color: transparent;
+    padding: 10px;
+    border: 2px Solid #009CDE;
+    width: 100%;
+    color: #000;
+}
+
+.modal-logout {
+    max-width: 70%;
+}
+
+.log-sec2 {
+    background: linear-gradient(180deg, rgba(100, 204, 201, 1) 0%, rgba(0, 136, 194, 1) 50%) !important;
+    padding: 10px 0;
+}
+
+.scroll-top-btn {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    color: #fff;
+    background: var(--Heading-color);
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.logout_popup {
+    font-size: 2rem;
+    color: #009CDE;
+}
+
+.modal.show .modal-dialog {
+     margin: auto;
+}
